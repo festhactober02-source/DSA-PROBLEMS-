@@ -5,7 +5,10 @@ class Node:
         self.data = data   # store data
         self.next = None   # pointer to next node
 
-
+def insert_at_end(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
 # Linked List class
 class LinkedList:
     def __init__(self):
