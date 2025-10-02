@@ -38,20 +38,5 @@ class LinkedList:
             temp = None
             return
 
-        prev = None
-        while temp and temp.data != key:
-            prev = temp
-            temp = temp.next
-
-        if temp is None:  # Key not found
-            return
-
-        prev.next = temp.next
-        temp = None
-
-    # Search for a value
-    def search(self, key):
-        temp = self.head
-        while temp:
-            if temp.data == key:
+        
 
