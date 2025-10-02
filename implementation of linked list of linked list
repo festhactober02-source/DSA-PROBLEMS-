@@ -1,3 +1,4 @@
+        self.data = data   # store data
 
 # Node class
 class Node:
