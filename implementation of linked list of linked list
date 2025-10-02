@@ -32,11 +32,6 @@ class LinkedList:
     def delete_node(self, key):
         temp = self.head
 
-        # If head node holds the key
-        if temp and temp.data == key:
-            self.head = temp.next
-            temp = None
-            return
-
+        
         
 
