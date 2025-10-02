@@ -33,6 +33,51 @@ class LinkedList:
             self.head = new_node
             return
 
-        
-        
+    # Delete a node by value
+    def delete_node(self, key):
+        temp = self.head
+        if temp is not None and temp.data == key:
+            self.head = temp.next
+            temp.next = None
+            return
+        prev = None
+        while temp is not None and temp.data != key:
+            prev = temp
+            temp = temp.next
+        if temp is None:
+            return
+        prev.next = temp.next
+        temp.next = None
+
+    def search(self, key):
+        temp = self.head
+        while temp:
+            if temp.data == key:
+                return True
+            temp = temp.next
+        return False
+    
+    def print_list(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")
+
+if __name__ == "__main__":
+    ll = LinkedList()
+    ll.insert_at_end(10)
+    ll.insert_at_end(20)
+    ll.insert_at_beginning(5)
+    ll.insert_at_end(30)
+
+    print("Linked List:")
+    ll.print_list()
+
+    print("Search 20:", ll.search(20))
+    print("Search 99:", ll.search(99))
+
+    ll.delete_node(20)
+    print("After deleting 20:")
+    ll.print_list()
 
