@@ -28,10 +28,6 @@ class LinkedList:
             temp = temp.next
         temp.next = new_node
 
-    # Delete a node by value
-    def delete_node(self, key):
-        temp = self.head
-
         
         
 
