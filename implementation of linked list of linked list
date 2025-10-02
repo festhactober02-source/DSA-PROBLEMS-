@@ -23,7 +23,15 @@ class LinkedList:
         if self.head is None:
             self.head = new_node
             return
-       
+       node.next = self.head
+        self.head = new_node
+
+    # Insert at the end
+    def insert_at_end(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+            return
 
         
         
