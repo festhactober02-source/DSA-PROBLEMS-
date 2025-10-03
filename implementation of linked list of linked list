@@ -14,6 +14,13 @@ def insert_at_end(self, data):
 class LinkedList:
     def __init__(self):
         self.head = None
+  if self.head is None:
+            self.head = new_node
+# Linked List class
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
 
     # Insert at the beginning
     def insert_at_beginning(self, data):
