@@ -10,11 +10,16 @@ def insert_at_end(self, data):
         new_node = Node(data)
         if self.head is None:
             self.head = new_node
-# Linked List class
+# Linked List classghhvghnvv
 class LinkedList:
     def __init__(self):
         self.head = None
   if self.head is None:
+insert_at_end(self, data):
+        new_node = Node(data)
+        if self.head is None:
+            self.head = new_node
+# Linked List classghhvghnvv
             self.head = new_node
 # Linked List class
 class LinkedList:
